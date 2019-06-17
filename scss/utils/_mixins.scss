@@ -1,0 +1,51 @@
+@mixin on-event($self: false) {
+    @if $self {
+      &,
+      &:hover,
+      &:active,
+      &:focus {
+        @content;
+      }
+    } @else {
+      &:hover,
+      &:active,
+      &:focus {
+        @content;
+      }
+    }
+  }
+
+  // media query
+  // Small devices
+@mixin sm {
+  @media (max-width: #{$grid__bp-sm}rem) {
+      @content;
+  }
+}
+
+// Medium devices to small device
+@mixin mdtosm {
+  @media (max-width: #{$grid__bp-md}rem) {
+      @content;
+  }
+}
+// Medium devices to large device
+@mixin mdTolg {
+  @media (min-width: #{$grid__bp-md}rem) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$grid__bp-lg}rem) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$grid__bp-xl}rem) {
+      @content;
+  }
+}

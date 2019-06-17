@@ -1,0 +1,37 @@
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    height: fit-content;
+
+    &--primary{
+        background: $primary-clr;
+        color: $white-clr;
+        
+
+        @include on-event(true){
+            color: $white-clr;
+        }
+    }
+    &.get-in-touch-btn{
+        padding: .9rem 2rem;
+        display: flex;
+        align-items: center;
+        @include sm{
+            padding: 0;
+            background: none;       
+        }
+        span{
+            @include sm{
+                display: none;                
+            }
+        }
+        
+
+        img{
+            height:1.6rem;
+            margin-right: .6rem;
+            margin-top: .5rem;
+        
+        }
+    }
+}

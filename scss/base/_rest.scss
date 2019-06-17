@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+// Basic styles for links
+ a {
+    color: $black-clr;
+    text-decoration: none;
+    &,
+    &:hover,
+    &:active,
+    &:focus{
+        color: $black-clr;
+       
+    }
+    
+  }
+  ul,
+  ol{
+    list-style: none;
+  }
+  nav{
+    background: $black-clr;
+    color: $white-clr;
+}
+
+section{
+  padding: 8rem 0;
+  color: darken($gray-clr, 20);
+}
+footer{
+  padding: 3rem 0;
+  background: $black-clr;
+  color: $gray-clr;
+  font-size: 1.3rem;
+  @include sm{
+    text-align: center;
+  }
+  a{
+    color: $gray-clr;
+    padding: .5rem;
+    
+    &:hover{
+      color: $gray-clr;
+    }
+  }
+  .right-box{
+    
+    .social-links{
+      text-align: right;
+      @include sm{
+        text-align: center;
+        margin-top: 3rem;
+      }
+    }
+    i{
+      font-size: 1.3rem;
+    }
+  }
+}

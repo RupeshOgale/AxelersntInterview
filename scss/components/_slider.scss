@@ -1,0 +1,48 @@
+
+  .testimoni-slider{
+    .swiper-slide:last-child .testimoni {
+        // margin-right: 0;
+    }
+  .testimoni{
+      margin: 2rem;      
+      &-text{
+        position: relative;
+        box-shadow: 0.2rem 0.2rem 0.2rem #afa5a369;
+        border-radius: 1rem;
+        padding: 4rem;
+        background: $white-clr;
+        &::before{
+            content: '';
+            position: absolute;
+            height: 3rem;
+            width: 4rem;
+            background: $white-clr;
+            box-shadow: 2px 0.2rem 0.1rem #afa5a345;
+            bottom: -1.4rem;         
+            transform: rotate(36deg);
+            
+        }
+
+
+      }
+      i{
+          color: $primary-clr;
+      }
+      &-person{
+          display: flex;
+          
+          margin-top: 3rem;
+          .icon{
+            height: 6rem;
+            margin-right: 1.2rem;
+          }
+          h5{
+              margin-top: 1rem;          
+          }
+          h6{
+            margin-top: .5rem;  
+          }
+         
+      }
+  }
+}

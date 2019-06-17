@@ -1,0 +1,33 @@
+@import
+  'utils/variables',
+  'utils/_utility',
+//   'utils/functions',
+  'utils/mixins';
+//   'utils/placeholders';
+
+@import
+  'base/rest',
+  'base/typography';
+
+@import
+'layout/grid',
+'layout/navigation';
+//   'layout/header',
+//   'layout/footer',
+//   'layout/sidebar',
+//   'layout/forms';
+
+@import
+  'components/buttons',
+  'components/header',
+ 'components/slider';
+//   'components/cover',
+//   'components/dropdown';
+
+@import
+  'pages/home';
+//   'pages/contact';
+
+@import
+  'themes/theme';
+//   'themes/admin';

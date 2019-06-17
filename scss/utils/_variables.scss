@@ -1,0 +1,25 @@
+
+// grid system
+$grid__bp-sm: 57.6;
+$grid__bp-md: 76.8;
+$grid__bp-lg: 99.2;
+$grid__bp-xl: 120;
+$grid__cols: 12;
+
+$map-grid-props: (
+        '': 0,
+        '-sm': $grid__bp-sm,
+        '-md': $grid__bp-md,
+        '-lg': $grid__bp-lg,
+        '-xl': $grid__bp-xl
+);
+// colors
+    $primary-clr:#ee3b00;
+
+    $black-clr:#171513;
+    $gray-clr:#afa5a3;
+    $light-gray-clr:#f7f7f7;    
+    $white-clr:#ffffff;
+
+// font sizes
+    

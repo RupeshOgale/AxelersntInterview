@@ -1,0 +1,76 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .fa-bars{
+        display: none;
+        font-size: 2rem;
+        font-weight: 400;
+        cursor: pointer;
+        @include sm{
+            display: block;
+        }
+    }
+
+    &--logo{
+        width: 20rem;
+        padding: 2.8rem;
+        @include sm{
+            width: auto;
+            padding: 0;
+        }
+        span{
+            font-weight: 300;
+            color: $primary-clr;
+        }
+    }
+    .right-box{
+        display: flex; 
+        align-items: center;
+    }
+    &--menu{
+        display: flex;
+        @include sm{
+            position: fixed;
+            justify-content: center;
+            top: 0;            
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+            background: $black-clr;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            transform: translateX(-100%);
+            transition: all 0.5s cubic-bezier(0.83, 0.07, 0.21, 1.01);
+            
+        }
+        &.active{
+            transform: translateX(0);
+        }
+        
+        &--link{
+            display: inline-block;
+            padding: 2.8rem;
+            color: $gray-clr;
+            @include sm{
+                display: block;
+                text-align: center;
+            }
+
+         
+            &:hover,            
+            &:focus{
+                color: $white-clr;
+            
+            }
+            &.Active{
+                color: $white-clr; 
+            }
+            
+        }
+    }
+
+}
